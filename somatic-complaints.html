@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My HTML Page</title>
+  <title>Kimsoohyun</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
@@ -45,27 +45,31 @@
     }
     .container {
       display: flex;
-      flex-direction: column; /* Update to vertical layout on mobile */
+      justify-content: space-between;
+      align-items: flex-start;
     }
     #menu-bar {
-      width: 100%; /* Take full width on mobile */
+      position: fixed;
+      width: 20%;
       padding-right: 9px;
       line-height: 1.5;
     }
     #content {
+      flex-basis: 80%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 20px; /* Add padding on all sides */
+      margin: 0 auto;
+      padding-left: 200px;
     }
 
     #info-content {
       text-align: left;
-      padding-left: 0; /* Remove left padding */
+      padding-left: 50px;
     }
 
     #info-content img {
-      max-width: 100%; /* Make images responsive */
+      max-width: 80%;
       height: auto;
     }
 
@@ -74,34 +78,36 @@
     }
 
     .text {
-      padding-top: 20px; /* Reduce top padding */
-      padding-bottom: 20px; /* Reduce bottom padding */
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 90px;
     }
-
     .strikethrough {
-      text-decoration: line-through;
-      text-decoration-color: blue;
-      text-decoration-thickness: 0.3em; 
-    }
+    text-decoration: line-through;
+    text-decoration-color: blue;
+    text-decoration-thickness: 0.3em; 
+  }
 
     /* Media query for screens 600px or narrower */
-    @media (max-width: 600px) {
+    @media (max-width: 950px) {
       #menu-bar {
         display: none;
       }
 
       #content {
+        flex-basis: 100%;
+        padding-left: 20px;
         padding-top: 50px;
       }
 
       #info-content {
-        padding-left: 0;
+        padding-left: 20px;
       }
 
       .text {
         padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 0; /* Remove right padding */
+        padding-bottom: 70px;
+        padding-right: 50px;
       }
 
       #info-content img {
@@ -127,7 +133,7 @@
       }
       
     }
-    @media (min-width: 601px) {
+    @media (min-width: 950px) {
       #menu-link {
         display: none;
       }
@@ -150,7 +156,7 @@
         </section>
       </section>
       <span style="color: rgb(8, 0, 255);"><sup>10</sup></span>&nbsp;<a href="endless_optimism.html" rel="history"><span class="italicize" style="color: #000;">Endless Optimism&nbsp;</span></a><br>
-      <span style="color: rgb(8, 0, 255);"><sup>9</sup></span>&nbsp;<a href="somatic-complaints.html" rel="history"><span class="italicize strikethrough" style="color: #000;">Somatic Complaints&nbsp;</span></a><br>
+      <span style="color: rgb(8, 0, 255);"><sup>9</sup></span>&nbsp;<a href="somatic-complaints.html" rel="history"><span class="italicize " style="color: #000;">Somatic Complaints&nbsp;</span></a><br>
       <span style="color: rgb(8, 0, 255);"><sup>8 </sup></span>&nbsp;<a href="plot.html" rel="history"><span class="italicize" style="color: #000;">Plot&nbsp;</span></a><br>
       <span style="color: rgb(8, 0, 255);"><sup>7</sup></span>&nbsp;<a href="soap.html" rel="history"><span class="italicize" style="color: #000;">Soap<br></a>
       <span style="color: rgb(8, 0, 255);"><sup>6</sup></span>&nbsp;<a href="temporal-tangibility.html" rel="history"><span class="italicize" style="color: #000;">Temporal Tangibility<br></a>
@@ -228,14 +234,18 @@
           <br>
           <br><br><br>
           <div style="display: flex;">
-            <img src="somatic-complaints/_56B2191.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
+            <img src="somatic-complaints/Somatic-Complants-4.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
+          <br>
+          <br><br><br>
+        </div>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
   </div>
-
-  <!-- Mobile menu link -->
-  <a href="#menu-bar" id="menu-link">Menu</a>
-  <a href="https://www.instagram.com/soohyun.kimmm/" id="kim-soohyun-link">Instagram</a>
+  <a href="menu.html#" id="menu-link">Menu</a>
+  <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>
 </body>
 </html>
