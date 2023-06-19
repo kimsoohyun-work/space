@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My HTML Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <style>
+    section {
+      display: inline;
+      background-color: transparent;
+    }
+    .subsection .after {
+      display: none;
+    }
+    .subsection:hover .before {
+      display: none;
+    }
+    .subsection:hover .after {
+      display: inline;
+    }
+    body {
+      font-family: 'Alegreya', serif;
+      font-size: 14px;
+      color: black;
+      font-weight: 100;
+      padding-left: 10px; /* Add left padding */
+      padding-top: 9px; 
+    }
+    #main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 100;
+    }
+    a span[color="#05f"], a span[color="rgb(0, 102, 255)"] {
+      color: inherit;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    #menu-bar {
+      position: fixed;
+      width: 20%;
+      padding-right: 9px;
+      line-height: 1.6;
+    }
+    #content {
+      flex-basis: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+      padding-left: 200px;
+    }
+
+    #info-content {
+      text-align: left;
+      padding-left: 50px;
+    }
+
+    #info-content img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .italicize {
+      font-style: italic;
+    }
+
+    .text {
+        height: auto;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-bottom: 90px;
+    }
+
+    /* Media query for screens 600px or narrower */
+    @media (max-width: 950px) {
+      #menu-bar {
+       display: none;
+      }
+
+      #content {
+        flex-basis: 100%;
+        padding-left: 1vh;
+        padding-top: 50px;
+      }
+
+      #info-content {
+        line-height: 1.6;
+        padding-top: 50px;
+      }
+
+      .text {
+        padding-top: 20px;
+        padding-right: 120px;
+      }
+
+      #info-content img {
+        max-width: 100%;
+      }
+      #menu-link {
+        display: block;
+        position: fixed;
+        top: 8px;
+        right: 10px;
+        padding: 10px;
+        color: black;
+        font-size: 13px;
+      }
+      #kim-soohyun-link {
+        display: block;
+        position: fixed;
+        top: 8px;
+        left: 10px;
+        padding: 10px;
+        color: black;
+        font-size: 13px;
+      }
+      
+    }
+    @media (min-width: 950px) {
+      #menu-link {
+        display: none;
+      }
+      #kim-soohyun-link {
+        display: none;
+      }
+      #info-content {
+        display: none;
+      }
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="menu-bar">
+      <a href="main.html" rel="history">
+        <span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span><br>
+      </a><br>
+      <section class="subsection">
+        <section class="before">
+        </section>
+      </section>
+      <span style="color: rgb(0, 102, 255);">8.</span>&nbsp;<a href="somatic-complaints.html" rel="history"><span class="italicize" style="color: #000;">Somatic Complaints&nbsp;</span></a><br>
+      <span style="color: rgb(0, 102, 255);">7.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/plot.html" rel="history"><span class="italicize" style="color: #000;">Plot&nbsp;</span></a><br>
+      <span style="color: rgb(0, 102, 255);">6.</span>&nbsp;<a href="soap.html" rel="history"><span class="italicize" style="color: #000;">Soap<br></a>
+      <span style="color: rgb(0, 102, 255);">5.</span>&nbsp;<a href="temporal-tangibility.html" rel="history"><span class="italicize" style="color: #000;">Temporal Tangibility<br></a>
+      <span style="color: rgb(0, 102, 255);">4.</span>&nbsp;<a href="absent-presence.html" rel="history"><span class="italicize" style="color: #000;">Absent Presence</a> <br>
+      <span style="color: rgb(0, 102, 255);">3.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/Untitled-2016.html" rel="history"><span class="italicize" style="color: #000;">Untitled (documentation)</a><br>
+      <span style="color: rgb(0, 102, 255);">2.</span>&nbsp;<a href="gothic-2016" rel="history"><span class="italicize" style="color: #000;">Gothic<br></a>
+      <span style="color: rgb(0, 102, 255);">1.</span>&nbsp;<a href="Untitled-2015" rel="history"><span class="italicize" style="color: #000;">Untitled</a><br>
+<br>
+      <section class="subsection">
+        <section class="before">
+          <a href="Info.html">Info</a>
+        </section>
+        <section class="after">
+          <a href="Info.html">Info?</a>
+        </section>
+      </section>
+      <br>
+      <section class="subsection">
+        <section class="before">
+          <a>@</a>
+        </section>
+        <section class="after">
+          tn0gus123@gmail.com
+        </section>
+      </section>
+    </div>
+
+    <div id="content">
+      <!-- Content for the "info" page -->
+      <div id="info-content">
+        <div class="text">
+      <span style="color: rgb(0, 102, 255);">10.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/endless_optimism.html" rel="history"><span class="italicize" style="color: #000;">Endless Optimism&nbsp;</span></a><br>
+      <span style="color: rgb(0, 102, 255);">9.</span>&nbsp;<a href="somatic-complaints.html" rel="history"><span class="italicize" style="color: #000;">Somatic Complaints&nbsp;</span></a><br>
+      <span style="color: rgb(0, 102, 255);">8.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/plot.html" rel="history"><span class="italicize" style="color: #000;">Plot&nbsp;</span></a><br>
+      <span style="color: rgb(0, 102, 255);">7.</span>&nbsp;<a href="soap.html" rel="history"><span class="italicize" style="color: #000;">Soap<br></a>
+      <span style="color: rgb(0, 102, 255);">6.</span>&nbsp;<a href="temporal-tangibility.html" rel="history"><span class="italicize" style="color: #000;">Temporal Tangibility<br></a>
+      <span style="color: rgb(0, 102, 255);">5.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/Peel’s-pile.html" rel="history"><span class="italicize" style="color: #000;">Peel's pile<br></a> 
+      <span style="color: rgb(0, 102, 255);">4.</span>&nbsp;<a href="absent-presence.html" rel="history"><span class="italicize" style="color: #000;">Absent Presence</a> <br>
+      <span style="color: rgb(0, 102, 255);">3.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/Untitled-2016.html" rel="history"><span class="italicize" style="color: #000;">Untitled (documentation)</a><br>
+      <span style="color: rgb(0, 102, 255);">2.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/gothic.html" rel="history"><span class="italicize" style="color: #000;">Gothic<br></a>
+      <span style="color: rgb(0, 102, 255);">1.</span>&nbsp;<a href="/Users/kimsoohyun/Documents/Website/Untitled-2015.html" rel="history"><span class="italicize" style="color: #000;">Untitled</a><br>
+        <br>
+      <section class="subsection">
+        <section class="before">
+          <a href="Info.html">Info</a>
+        </section>
+        <section class="after">
+          <a href="Info.html">Info?</a>
+        </section>
+      </section>
+      <br>
+      <section class="subsection">
+        <section class="before">
+          <a>@</a>
+        </section>
+        <section class="after">
+          tn0gus123@gmail.com
+        </section>
+      </section>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <a href="#" id="menu-link" onclick="goBack()">X</a>
+  <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>
+  <script>
+    // Function to handle the "X" button click
+    function goBack() {
+      history.go(-1); // Go back to the previous page
+    }
+  </script>
+  
+</body>
+</html>
