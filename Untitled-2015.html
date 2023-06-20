@@ -26,7 +26,7 @@
       font-size: 14px;
       color: black;
       font-weight: 100;
-      padding-left: 10px; /* Add left padding */
+      padding-left: 10px;
       padding-top: 9px; 
     }
     #main-content {
@@ -52,7 +52,6 @@
     #menu-bar {
       position: fixed;
       width: 20%;
-      padding-right: 9px;
       line-height: 1.5;
     }
     #content {
@@ -66,44 +65,53 @@
 
     #info-content {
       text-align: left;
-      padding-left: 50px;
+      /* padding-left: 50px; */
     }
 
-    #info-content img {
+    /* #info-content img {
       max-width: 60%;
       height: auto;
-    }
+    } */
 
     .italicize {
       font-style: italic;
     }
 
     .text {
-        height: auto;
-        padding-top: 70px;
-        padding-bottom: 90px;
+      height: auto;
+      padding-top: 70px;
+      padding-bottom: 90px;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     .strikethrough {
-    text-decoration: line-through;
-    text-decoration-color: blue;
-    text-decoration-thickness: 0.3em; 
-  }
+      text-decoration: line-through;
+      text-decoration-color: blue;
+      text-decoration-thickness: 0.3em; 
+    }
+    .img_box {
+      justify-content: center;
+    }
 
     /* Media query for screens 600px or narrower */
     @media only screen and (max-width: 600px) {
+      body {
+        padding-left: 0px;
+      }
+
       #menu-bar {
         display: none;
       }
 
       #content {
         flex-basis: 100%;
-        padding-left: 20px;
-        padding-top: 50px;
+        padding-left: 0px;
+        padding-top: 30px;
       }
 
-      #info-content {
+      /* #info-content {
         padding-left: 20px;
-      }
+      } */
 
       .text {
         padding-top: 20px;
@@ -111,9 +119,9 @@
         padding-right: 50px;
       }
 
-      #info-content img {
+      /* #info-content img {
         max-width: 100%;
-      }
+      } */
       #menu-link {
         display: block;
         position: fixed;
@@ -132,7 +140,14 @@
         color: black;
         font-size: 13px;
       }
-      
+      .header {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 50px;
+      }
     }
     @media (min-width: 601px) {
       #menu-link {
@@ -195,57 +210,57 @@
             opaque vinyl, bread, found objects, plaster
             <br>dimensions variable
         </div>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
           <img src="Untitled-2015/IMG_3121.jpeg" alt="Somatic Complaints" style="max-width: 60%; height: auto;">
         </div>
         <br>
         <br><br><br>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/IMG_7764.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div>
         <br>
           <br><br><br>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/IMG_7773.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/IMG_7736.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/666.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/333.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/000.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/777.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/888.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/000.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="Untitled-2015/Screen-Shot-2021-01-26-at-12.26.14-PM.png" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
@@ -257,7 +272,9 @@
       </div>
     </div>
   </div>
-  <a href="menu.html#" id="menu-link">Menu</a>
-  <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>
+  <div class="header">
+    <a href="menu.html" id="menu-link">Menu</a>
+    <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>  
+  </div>
 </body>
 </html>

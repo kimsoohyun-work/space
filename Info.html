@@ -52,7 +52,6 @@
     #menu-bar {
       position: fixed;
       width: 20%;
-      padding-right: 9px;
       line-height: 1.5;
     }
     #content {
@@ -68,20 +67,16 @@
       text-align: left;
     }
 
-    #info-content img {
-      max-width: 90%;
-      height: auto;
-    }
-
     .italicize {
       font-style: italic;
     }
 
     .text {
-        height: auto;
-        padding-top: 70px;
-        padding-left: 50px;
-        padding-bottom: 90px;
+      height: auto;
+      padding-top: 70px;
+      padding-bottom: 90px;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     .strike {
@@ -92,6 +87,9 @@
 
     /* Media query for screens 600px or narrower */
     @media only screen and (max-width: 600px) {
+      body {
+        padding-left: 0px;
+      }
       #menu-bar {
         display: none;
       }
@@ -101,7 +99,11 @@
         padding-left: 0.1px;
         padding-top: 50px;
       }
-
+     #info-content {
+        padding-left: 5%;
+        padding-right: 5%;
+  
+      }
 
       .text {
         padding-top: 20px;
@@ -109,9 +111,7 @@
         padding-right: 50px;
       }
 
-      #info-content img {
-        max-width: 100%;
-      }
+
       #menu-link {
         display: block;
         position: fixed;
@@ -130,7 +130,14 @@
         color: black;
         font-size: 13px;
       }
-      
+      .header {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 50px;
+      }
     }
     @media (min-width: 600px) {
       #menu-link {
@@ -213,10 +220,12 @@
         
         Master of Fine Art (with Distinction), Ruskin School of Art, University of Oxford, Oxford, UK&nbsp; &nbsp;<br>
         2015 – 2018&nbsp; <br>
-        Bachelor of Fine Art (First-class honours), Goldsmith University, London, UK&nbsp; <br>
+        Bachelor of Fine Art (First-class honours), Goldsmith University, London, UK&nbsp; <br><br><br><br><br><br>
     </div>
   </div>
-  <a href="menu.html#" id="menu-link">Menu</a>
-  <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>
+  <div class="header">
+    <a href="menu.html" id="menu-link">Menu</a>
+    <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>  
+  </div>
 </body>
 </html>

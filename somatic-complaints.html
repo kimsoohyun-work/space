@@ -52,7 +52,6 @@
     #menu-bar {
       position: fixed;
       width: 20%;
-      padding-right: 9px;
       line-height: 1.5;
     }
     #content {
@@ -66,43 +65,39 @@
 
     #info-content {
       text-align: left;
-      padding-left: 50px;
     }
-
-    #info-content img {
-      max-width: 80%;
-      height: auto;
-    }
-
     .italicize {
       font-style: italic;
     }
 
     .text {
-        height: auto;
-        padding-top: 70px;
-        padding-bottom: 90px;
+      height: auto;
+      padding-top: 70px;
+      padding-bottom: 90px;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     .strikethrough {
     text-decoration: line-through;
     text-decoration-color: blue;
     text-decoration-thickness: 0.3em; 
   }
-
+  .img_box {
+      justify-content: center;
+    }
     /* Media query for screens 600px or narrower */
     @media only screen and (max-width: 600px) {
+      body {
+        padding-left: 0px;
+      }
       #menu-bar {
         display: none;
       }
 
       #content {
         flex-basis: 100%;
-        padding-left: 20px;
-        padding-top: 50px;
-      }
-
-      #info-content {
-        padding-left: 20px;
+        padding-left: 0px;
+        padding-top: 30px;
       }
 
       .text {
@@ -111,9 +106,6 @@
         padding-right: 50px;
       }
 
-      #info-content img {
-        max-width: 100%;
-      }
       #menu-link {
         display: block;
         position: fixed;
@@ -132,7 +124,14 @@
         color: black;
         font-size: 13px;
       }
-      
+      .header {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 50px;
+      }
     }
     @media (min-width: 601px) {
       #menu-link {
@@ -194,47 +193,47 @@
             aluminum pipes, metal joints, drain, belt, liquid rubber, perspex, metal sheet, fabric, net, strings, <br>metal chains, 3D printed resin, 3D printed PLA, spray, rubber floor, hooks, handlebar grips
             <br>dimensions variable
         </div>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
           <img src="somatic-complaints/somatic-complaints.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div>
         <br>
         <br><br><br>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/0_56B2176.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div>
         <br>
           <br><br><br>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/0_56B2228.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/0_56B2223.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
         </div> 
         <br>
           <br><br><br>
-        <div style="display: flex;">
+        <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/o_56B2194.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/Soohyun-Kim_Please-detail.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/Soohyun_Please-detail.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/Soohyun_Please.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
           <br>
           <br><br><br>
-          <div style="display: flex;">
+          <div style="display: flex;" class="img_box">
             <img src="somatic-complaints/Somatic-Complants-4.jpeg" alt="Somatic Complaints" style="max-width: 80%; height: auto;">
           </div>
           <br>
@@ -246,7 +245,8 @@
       </div>
     </div>
   </div>
-  <a href="menu.html#" id="menu-link">Menu</a>
-  <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>
-</body>
+  <div class="header">
+    <a href="menu.html" id="menu-link">Menu</a>
+    <a href="main.html" id="kim-soohyun-link"><span style="color: rgb(0, 102, 255);">“</span> Kim Soohyun <span style="color: #05f;">”</span></a>  
+  </div>
 </html>
